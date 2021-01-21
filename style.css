@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+footer{
+    text-align: center;
+}
+
+.box{
+    width: 700px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 100px auto;
+}
+
+.title{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.dino{
+    width: 50px;
+    height: 50px;
+    /* background-color: blueviolet; */
+    position: relative;
+    top: 149px; /* tinggi box = 200, tinggi dino = 50, border = 1. 200 - 50 - 1 = 149 agar di bawah*/
+}
+
+.cactus{
+    width: 25px;
+    height: 25px;
+    /* background-color: blue; */
+    position: relative;
+    top: 123px;
+    left: 675px;
+    animation: cactus-animation 2s infinite linear;
+}
+
+.jump{
+    animation: jump-animation 500ms;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes cactus-animation{
+    0%{left: 675px;}
+    100%{left: -20px;}
+}
+
+@keyframes jump-animation{
+    0%{top: 149px;}
+    25%{top: 100px;}
+    50%{top: 100px;}
+    125%{top: 100px;}
+    100%{top: 149px;}
+}
+
+.score{
+    width: 150px;
+    height: 50px;
+    position: relative;
+    top: -75px;
+    left: 10px;
+    /* background-color: orange; */
+}
